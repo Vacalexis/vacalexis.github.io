@@ -7,24 +7,30 @@
 
 <style>
   body {
+    margin: 12px;
   }
+
   p {
     margin-top: 0px;
     margin-bottom: 0px;
     line-height: 1.375em;
   }
+
   h1 {
     font-size: 3em;
     line-height: 1.05em;
   }
+
   h2 {
     font-size: 2.25em;
     line-height: 1.25em;
   }
+
   h3 {
     font-size: 1.75em;
     line-height: 1.25em;
   }
+
   h4 {
     font-size: 1.125em;
     line-height: 1.22222222em;
@@ -47,9 +53,17 @@
       <li><a href="#naming-conventions">Convenções de nomes básicas</a></li>
       <li><a href="#numeric-systems">Sistemas de numeração</a></li>
       <li><a href="#powers-of-two">Potências de 2</a></li>
-      <li><a href="#powers-of-two">Operadores lógicos</a></li>
-      <li><a href="#powers-of-two">Consola</a></li>
-      <li><a href="#powers-of-two">Atalhos</a></li>
+      <li><a href="#logical-operators">Operadores lógicos</a></li>
+      <li><a href="#console">Consola</a></li>
+      <ul>
+        <li><a href="console-more-commands">Mais comandos que pessoalmente acho úteis para Windows:</a></li>
+      </ul>
+      <li><a href="#keybindings">Atalhos</a>
+        <ul>
+          <li><a href="keybindings-console">Atalhos para consola</a></li>
+          <li><a href="keybindings-text-editors">Atalhos de editor de texto (VSCode, can't promise it works on Sublime)</a></li>
+        </ul>
+      </li>
     </ol>
   </nav>
   <hr>
@@ -84,14 +98,14 @@
     <p>0 1 2 4 8 16 32 64 128 256 512 1024 2048 4096 8192 16384</p>
   </section>
   <hr>
-  <section>
+  <section id="logical-operators">
     <h3>5. Operadores lógicos</h3>
     <p>&& and</p>
     <p>|| or</p>
     <p>! not</p>
   </section>
   <hr>
-  <section>
+  <section id="console">
     <h3>6. Consola</h3>
     <p>Linha de comandos, CLI, Terminal, Consola, aquela janela preta com letras brancas pequeninas. Tudo nomes para a
       mesma coisa.</p>
@@ -112,22 +126,22 @@
     Foi utilizado um path absoluto. Começa por C://. Um path absoluto pode ser identificado regra geral por começar
     por
     C:// ou file:// ou https://, etc.</p>
-    <section>
-      <h4>Mais comandos que pessoalmente acho úteis para Windows:</h4>
+    <section id="console-more-commands">
+      <h4>Mais comandos que pessoalmente acho úteis para Windows</h4>
       <p>cls -> limpa a consola</p>
       <p>exit -> fecha a consola</p>
       <p>dir -> Mostra o conteúdo da diretoria atual</p>
     </section>
   </section>
-<hr>
-  <section>
+  <hr>
+  <section id="keybindings">
     <h3>7. Atalhos</h3>
     <p>Para atalhos combinados (várias teclas) as teclas pressionam-se pela ordem que se lêem e deixam-se premidas
       até
       premir todas.</p>
 
-    <section>
-      <h4>Atalhos para consola:</h4>
+    <section id="keybindings-console">
+      <h4>Atalhos para consola</h4>
       <p>setinha para cima - cycles entre últimos comandos utilizados</p>
       <p>setinha para baixo - cycles entre últimos comandos utilizados</p>
       <p>TAB -> autocomplete/cycle through options</p>
@@ -159,8 +173,8 @@
       <br>
       <p>alt+f4 - fecha aplicação</p>
     </section>
-    <section>
-      <h4>Atalhos de editor de texto (VSCode, can't promise it works on Sublime):</h4>
+    <section id="keybindings-text-editors">
+      <h4>Atalhos de editor de texto (VSCode, can't promise it works on Sublime)</h4>
 
       <p>ctrl+d - copia linha ou texto focado e depois cola</p>
       <p>ctrl+x - copia linha ou texto focado e depois apaga</p>
@@ -180,7 +194,7 @@
       <p>ctrl+shift+z - redo (às vezes é o ctrl+y ao invés)</p>
     </section>
   </section>
-<hr>
+  <hr>
   <footer>
     &copy; 2022 Vacalexis
   </footer>
