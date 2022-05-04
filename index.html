@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>1 - 03052022</title>
+</head>
+
+<style>
+  p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  footer {
+    margin-top: 1em;
+    float: right;
+  }
+</style>
+
+<body>
+  <nav id="index">
+    <h1>
+      Índice
+    </h1>
+    <ol>
+      <li><a href="#glossary">Glossário</a></li>
+      <li><a href="#naming-conventions">Convenções de nomes básicas</a></li>
+      <li><a href="#numeric-systems">Sistemas de numeração</a></li>
+      <li><a href="#powers-of-two">Potências de 2</a></li>
+    </ol>
+  </nav>
+  <section id="glossary">
+    <h1>Glossário</h1>
+    <p><strong>GUI - Graphical User Interface</strong></p>
+    <p><strong>CLI - Command Line Interface</strong></p>
+  </section>
+  <section id="naming-conventions">
+    <h1>Convenções de nomes básicas</h1>
+    <p>camelCase - primeiraLetraMinúscula e sempre que muda de palavra usam letra capital para repsentar a mudança de
+      palavra</p>
+    <p>PascalCase - PrimeiraLetraMaiúsculaESempreQueMudaDePalavraUsamLetraMaiúscula</p>
+    <p>snake_case - Palavras_são_separadas_por_underscores</p>
+    <p>kebab-case - palavras-são-separadas-por-hífens</p>
+  </section>
+  <section id="numeric-systems">
+    <h1>Sistemas de numeração</h1>
+    <p>Binário: 0-1</p>
+    <p>0b10111</p><br>
+    <p>Decimal: 0-9</p>
+    <p>23</p><br>
+    <p>Hexadecimal 0-9, A-F
+    <p>0x17</p>
+  </section>
+  <section id="powers-of-two">
+    <h1>Potências de 2</h1>
+    <p>2^n</p>
+    <p>0 1 2 4 8 16 32 64 128 256 512 1024 2048 4096 8192 16384</p>
+  </section>
+  <section>
+    <h1>Operadores lógicos</h1>
+    <p>&& and</p>
+    <p>|| or</p>
+    <p>! not</p>
+  </section>
+  <section>
+    <h1>Consola</h1>
+    <p>Linha de comandos, CLI, Terminal, Consola, aquela janela preta com letras brancas pequeninas. Tudo nomes para a
+      mesma coisa.</p>
+    <p>Têm vídeos sobre isto no curso do Andrei. Secção 14.</p>
+    <p>cd %d - iniciais de change directory. Muda de diretoria de acordo com o argumento (%d) passado</p>
+    cd ../ - Salta uma pasta para fora</p>
+    cd ./ - Fica na mesma pasta (não faz nada)</p>
+    cd ./Test - Entra para a pasta Test, dentro da pasta atual, se existir</p>
+    cd ./.. - Salta uma pasta para fora</p>
+    cd Test - Entra para a pasta Text, dentro da pasta atual, se existir</p>
+    cd ../Test - Da esquerda para a direita: Salta uma pasta para fora e DEPOIS entra na pasta Test. É como se
+    executássemos os dois comandos abaixo seguidos:</p>
+    cd ../</p>
+    cd Test</p>
+    cd C:\Users\User\Desktop - Independentemente de onde estamos no sistema de ficheiros, salta para a pasta Desktop.
+    Foi utilizado um path absoluto. Começa por C://. Um path absoluto pode ser identificado regra geral por começar
+    por
+    C:// ou file:// ou https://, etc.</p>
+    <section>
+      <h3>Mais comandos que pessoalmente acho úteis para Windows:</h3>
+      <p>cls -> limpa a consola</p>
+      <p>exit -> fecha a consola</p>
+      <p>dir -> Mostra o conteúdo da diretoria atual</p>
+    </section>
+  </section>
+  <section>
+    <h1>Atalhos</h1>
+    <p>Para atalhos combinados (várias teclas) as teclas pressionam-se pela ordem que se lêem e deixam-se premidas
+      até
+      premir todas.</p>
+
+    <section>
+      <h3>Atalhos para consola:</h3>
+      <p>setinha para cima - cycles entre últimos comandos utilizados</p>
+      <p>setinha para baixo - cycles entre últimos comandos utilizados</p>
+      <p>TAB -> autocomplete/cycle through options</p>
+      <p>ctrl+c -> Quando o FOCUS está no teclado, isto é, não selecionaram texto com o rato, interrompe processo
+        atual.
+      </p>
+      <p>Conhecido por SIGINT/SIGBREAK. Eu interpreto SIGINT Signal Interruption (Sinalizar interrupção).</p>
+      <br>
+      <p>Por exemplo: ctrl+shift+t. Premir o ctrl sem largar. Premir o shift sem largar. Premir o t. Largar todas.</p>
+      <br>
+      <p>windows - Abre o "search" do windows. Uso para abrir programas rápido. Por exemplo: Carrego Windows, escrevo
+        o
+        início
+        de notepad até aparecer a aplicação, carrego Enter e baam está aberto o notepad. O mesmo se aplica a sublime,
+        chrome,
+        vscode, etc.
+      </p>
+      <p>ctrl+w - fecha a tab (funciona nos editores de texto também). Eu uso o ctrl+w para fazer "Expand selection"
+        (ver
+        em
+        baixo) nos editores de texto ao invés de fechar tabs.</p>
+      <p>ctrl+tab - muda de tab (funciona nos editores de texto também)</p>
+      <p>ctrl+shift+tab - abre a última tab fechada. Pode repetir-se ad infinitium. (funciona nos editores de texto
+        também)
+      </p>
+      <p>alt+tab - mudar entre janelas. podem usar as setinhas para navegar entre as janelas ou manter o alt premido e
+        carregar</p>
+      <p>repetidamente no tab. Quando largam o alt ele abre a janela focada.</p>
+      <br>
+      <p>alt+f4 - fecha aplicação</p>
+    </section>
+    <section>
+      <h3>Atalhos de editor de texto (VSCode, can't promise it works on Sublime):</h3>
+
+      <p>ctrl+d - copia linha ou texto focado e depois cola</p>
+      <p>ctrl+x - copia linha ou texto focado e depois apaga</p>
+      <p>ctrl+c - copia linha ou texto focado</p>
+      <p>ctrl+v - cola elementos do clipboard</p>
+      <p>windows+v - abre clipboard</p>
+      <br>
+      <p>left, right, up, down refere-se às setinhas do teclado</p>
+      <p>shift+alt+left e shift+alt+right - Expand selection. Eu configurei o ctrl+w para fazer isto porque estou
+        habituado
+        no WebStorm.</p>
+      <p>shift+alt+up e shift+alt+down - Mexe a linha focada para cima ou para baixo.</p>
+      <br>
+      <p>ctrl+s - guarda ficheiro(s)</p>
+      <br>
+      <p>ctrl+z - undo</p>
+      <p>ctrl+shift+z - redo (às vezes é o ctrl+y ao invés)</p>
+    </section>
+  </section>
+  <footer>
+    &copy; 2022 Vacalexis
+  </footer>
+</body>
+
+</html>
