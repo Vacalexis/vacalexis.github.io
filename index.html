@@ -4,157 +4,20 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <!-- https://fontawesome.com/ -->
+  <script src="https://kit.fontawesome.com/97f3a9a14a.js" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" type="text/css" href="avatar.css">
+
   <title>Vacalexis'</title>
 </head>
 
-<!-- https://fontawesome.com/ -->
-<script src="https://kit.fontawesome.com/97f3a9a14a.js" crossorigin="anonymous"></script>
-
-<style id="main">
-  body {
-    margin: 12px;
-    font-family: Helvetica;
-
-    /* Disables webkit automatic font resize. First answer in: https://stackoverflow.com/questions/20924039/wrong-font-size-when-using-float-right-in-css-on-mobile-safari */
-    text-size-adjust: 100%;
-    -ms-text-size-adjust: 100%;
-    -moz-text-size-adjust: 100%;
-    -webkit-text-size-adjust: 100%;
-  }
-
-  p {
-    margin-top: 0px;
-    margin-bottom: 0px;
-    word-wrap: break-word;
-  }
-
-  /* Font sizing and line height picked according to https://www.impactplus.com/blog/best-font-size-for-website */
-
-  /* Extra small devices (phones, 600px and down) */
-  /* Small devices (portrait tablets and large phones, 600px and up) */
-  @media only screen and (max-width: 768px) {
-
-    body,
-    p {
-      line-height: 1.25rem;
-    }
-
-    h1 {
-      font-size: 2rem;
-      line-height: 1.25rem;
-    }
-
-    h2 {
-      font-size: 1.625rem;
-      line-height: 1.51384615rem;
-    }
-
-    h3 {
-      font-size: 1.375rem;
-      line-height: 1.13636364rem;
-    }
-
-    h4 {
-      font-size: 1.125rem;
-      line-height: 1.11111111rem;
-    }
-  }
-
-  /* Medium devices (landscape tablets, 768px and up) */
-  @media only screen and (min-width: 768px) {
-
-    body,
-    p {
-      line-height: 1.375rem;
-    }
-
-    h1 {
-      font-size: 2.5rem;
-      line-height: 1.125rem;
-    }
-
-    h2 {
-      font-size: 2rem;
-      line-height: 1.25rem;
-    }
-
-    h3 {
-      font-size: 1.5rem;
-      line-height: 1.25rem;
-    }
-
-    h4 {
-      font-size: 1.125rem;
-      line-height: 1.22222222rem;
-    }
-  }
-
-  /* Large devices (laptops/desktops, 992px and up) */
-  @media only screen and (min-width: 992px) {
-
-    body,
-    p {
-      line-height: 1.375rem;
-    }
-
-    h1 {
-      font-size: 3rem;
-      line-height: 1.05rem;
-    }
-
-    h2 {
-      font-size: 2.25rem;
-      line-height: 1.25rem;
-    }
-
-    h3 {
-      font-size: 1.75rem;
-      line-height: 1.25rem;
-    }
-
-    h4 {
-      font-size: 1.125rem;
-      line-height: 1.22222222rem;
-    }
-  }
-
-  /* Extra large devices (large laptops and desktops, 1200px and up) */
-  @media only screen and (min-width: 1200px) {
-
-    body,
-    p {
-      line-height: 1.375rem;
-    }
-
-    h1 {
-      font-size: 3rem;
-      line-height: 1.05rem;
-    }
-
-    h2 {
-      font-size: 2.25rem;
-      line-height: 1.25rem;
-    }
-
-    h3 {
-      font-size: 1.75rem;
-      line-height: 1.25rem;
-    }
-
-    h4 {
-      font-size: 1.125rem;
-      line-height: 1.22222222rem;
-    }
-  }
-
-  footer {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    float: right;
-  }
-</style>
-
 <body>
+  <header>
+    <img src="avatar.png" alt="Avatar" class="avatar">
+    <h4 class="header-title">Vacalexis</h4>
+  </header>
   <nav id="index">
     <h3>
       Índice
@@ -259,7 +122,8 @@
     <p>Por exemplo: ctrl+shift+t. Premir o ctrl sem largar. Premir o shift sem largar. Premir o t. Largar todas.</p>
     <br>
     <p><em>Eu mudei os atalhos do VSCode</em> para serem iguais aos do Webstorm. Instalei esta extensão abaixo.</p>
-    <p><a href="https://marketplace.visualstudio.com/items?itemName=k--kato.intellij-idea-keybindings">Intellij IDEA Keybindings for VSCode</a></p>
+    <p><a href="https://marketplace.visualstudio.com/items?itemName=k--kato.intellij-idea-keybindings">Intellij IDEA
+        Keybindings for VSCode</a></p>
 
     <section id="keybindings-console">
       <h4>Atalhos para consola</h4>
@@ -318,7 +182,9 @@
   <section id="resources">
     <h3>Recursos</h3>
     <h4>Cursos fixes</h4>
-    <p><a href="https://www.udemy.com/course/the-complete-web-developer-zero-to-mastery">The Complete Web Developer in 2022: Zero to Mastery</a> - Curso muito completo de Web Development. Bom professor, bons conteúdos e entertaining.</p>
+    <p><a href="https://www.udemy.com/course/the-complete-web-developer-zero-to-mastery">The Complete Web Developer in
+        2022: Zero to Mastery</a> - Curso muito completo de Web Development. Bom professor, bons conteúdos e
+      entertaining.</p>
     <h4>Website otimization and mobile responsiveness</h4>
     <p><a href="https://web.dev">web.dev</a></p>
     <p><a href="https://search.google.com/test/mobile-friendly">Google's mobile friendly test</a></p>
@@ -330,77 +196,19 @@
     <p><a href="https://cssbattle.dev/">CSS Battles</a> - "Jogo" engraçado para pôr em prática as skills HTML/CSS. Há
       muitos vídeos no youtube de malta a "jogar" isto. Very entertaining. Tanto os vídeos como "jogar". E educativo!
     </p>
-    <p><a href="https://material.io/design">Material Design</a> - Conjunto de guidelines de Design que podem seguir. É apenas um look de muitos. É
+    <p><a href="https://material.io/design">Material Design</a> - Conjunto de guidelines de Design que podem seguir. É
+      apenas um look de muitos. É
       da Google</p>
+    <p><a href="https://css-tricks.com/">CSS Tricks</a> - Recurso muito bom de CSS.</p>
   </section>
-  <hr>
   <footer>
     <p>&copy; 2022 Vacalexis</p>
   </footer>
 </body>
 
-
 <!-- Go to top button as seen in from https://www.w3schools.com/howto/howto_js_scroll_to_top.asp -->
 <!-- Modified style to have an icon and label as seen in https://www.w3schools.com/howto/howto_css_icon_buttons.asp -->
-<style id="goToTopButtonCSS">
-  /* Smooth scroll as seen in https://www.w3schools.com/howto/howto_css_smooth_scroll.asp */
-  html {
-    scroll-behavior: smooth;
-  }
-
-  #goToTopButton {
-    display: none;
-    /* Hidden by default */
-    position: fixed;
-    /* Fixed/sticky position */
-    bottom: 50px;
-    /* Place the button at the bottom of the page */
-    right: 30px;
-    /* Place the button 30px from the right */
-    z-index: 99;
-    /* Make sure it does not overlap */
-    border: 1px solid black;
-    /* Remove borders */
-    outline: none;
-    /* Remove outline */
-    background-color: white;
-    /* Set a background color */
-    color: black;
-    /* Text color */
-    cursor: pointer;
-    /* Add a mouse pointer on hover */
-    padding: 15px;
-    /* Some padding */
-    border-radius: 0px;
-    /* Rounded corners */
-    font-size: 1rem;
-    /* Increase font size */
-  }
-
-  #goToTopButton:hover {
-    background-color: #555;
-    /* Add a dark-grey background on hover */
-  }
-</style>
-<script id="goToTopButtonScript">
-  let goToTopButton = document.getElementById('goToTopButton');
-
-  // When the user scrolls down 20px from the top of the document, show the button
-  window.onscroll = function () { scrollFunction() };
-
-  function scrollFunction() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-      goToTopButton.style.display = "block";
-    } else {
-      goToTopButton.style.display = "none";
-    }
-  }
-
-  // When the user clicks on the button, scroll to the top of the document
-  function goToTop() {
-    document.body.scrollTop = 0; // For Safari
-    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-  }
-</script>
+<link rel="stylesheet" type="text/css" href="go-to-top-button/go-to-top-button.css">
+<script src="go-to-top-button/go-to-top-button.js"></script>
 
 </html>
