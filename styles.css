@@ -1,8 +1,107 @@
+body {
+    margin: 0;
+    font-family: Roboto, sans-serif;
+
+    /* Disables webkit automatic font resize. First answer in: https://stackoverflow.com/questions/20924039/wrong-font-size-when-using-float-right-in-css-on-mobile-safari */
+    text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+.content {
+    margin-left: 12px;
+    margin-right: 12px;
+    background-color: #fadadd;
+}
+
+header {
+    height: 80px;
+    border-bottom: 1px solid white;
+    display: flex;
+    align-items: center;
+    background-color: #D38088;
+    padding-right: 12px;
+    padding-left: 12px;
+    color: white;
+}
+
+header nav {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: right;
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+header nav h4 {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 12px;
+    padding-right: 12px;
+    height: 100%;
+    display: flex;
+    align-items:center;
+    border-right: 2px solid white;
+}
+
+header nav h4:first-child {
+    border-left: 2px solid white;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav {
+    padding-right: 12px;
+    padding-left: 12px;
+}
+
+section {
+    padding-right: 12px;
+    padding-left: 12px;
+}
+
+footer {
+    height: 80px;
+    border-top: 1px solid #eee;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding-right: 12px;
+    padding-left: 12px;
+}
+
+footer p {
+    text-align: right;
+}
+
+.header-title {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    word-wrap: break-word;
+}
+
 /* Font sizing and line height picked according to https://www.impactplus.com/blog/best-font-size-for-website */
 
 /* Extra small devices (phones, 600px and down) */
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (max-width: 768px) {
+
+    .content {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
 
     body,
     p {
@@ -28,6 +127,7 @@
         font-size: 1.125rem;
         line-height: 1.11111111rem;
     }
+
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -115,74 +215,4 @@
         font-size: 1.125rem;
         line-height: 1.22222222rem;
     }
-}
-
-body {
-    margin: 0;
-    font-family: Helvetica;
-
-    /* Disables webkit automatic font resize. First answer in: https://stackoverflow.com/questions/20924039/wrong-font-size-when-using-float-right-in-css-on-mobile-safari */
-    text-size-adjust: 100%;
-    -ms-text-size-adjust: 100%;
-    -moz-text-size-adjust: 100%;
-    -webkit-text-size-adjust: 100%;
-}
-
-.content {
-    margin-left: 12px;
-    margin-right: 12px;
-    background-color: #eee;
-}
-
-p {
-    margin-top: 0px;
-    margin-bottom: 0px;
-    word-wrap: break-word;
-}
-
-header {
-    height: 80px;
-    border-bottom: 1px solid #eee;
-
-    display: flex;
-    align-items: center;
-    justify-content: left;
-    background-color: #fadadd;
-    padding-right: 12px;
-    padding-left: 12px;
-}
-
-nav {
-    padding-right: 12px;
-    padding-left: 12px;
-}
-
-section {
-    padding-right: 12px;
-    padding-left: 12px;
-}
-
-.inline {
-    display: inline;
-}
-
-.header-title {
-    margin-left: 1rem;
-    margin-right: 1rem;
-}
-
-footer {
-    height: 80px;
-    border-top: 1px solid #eee;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    
-    padding-right: 12px;
-    padding-left: 12px;
-}
-
-footer p {
-    text-align: right;
 }

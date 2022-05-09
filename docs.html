@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html [lang]="pt">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- https://fontawesome.com/ -->
+  <script src="https://kit.fontawesome.com/97f3a9a14a.js" crossorigin="anonymous"></script>
+
+  <!-- https://fonts.google.com/specimen/Roboto#standard-styles -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" type="text/css" href="avatar.css">
+
+  <title>Vacalexis'</title>
+</head>
+
+<body>
+  <div class="content">
+    <header>
+      <div class="avatar-container">
+        <img src="avatar.png" alt="Avatar" class="avatar">
+      </div>
+      <h4 class="header-title">Vacalexis</h4>
+      <nav>
+          <h4>
+            <a href="docs.html">Documentos</a>
+          </h4>
+          <h4>
+            <a href="index.html">Início</a>
+          </h4>
+      </nav>
+    </header>
+    <nav id="index">
+      <h3>
+        Índice
+      </h3>
+      <ol>
+        <li><a href="#glossary">Glossário</a></li>
+        <li><a href="#naming-conventions">Convenções de nomes básicas</a></li>
+        <li><a href="#numeric-systems">Sistemas de numeração</a></li>
+        <li><a href="#powers-of-two">Potências de 2</a></li>
+        <li><a href="#logical-operators">Operadores lógicos</a></li>
+        <li><a href="#console">Consola</a>
+          <ul>
+            <li><a href="#console-more-commands">Mais comandos que pessoalmente acho úteis para Windows:</a></li>
+          </ul>
+        </li>
+        <li><a href="#keybindings">Atalhos</a>
+          <ul>
+            <li><a href="#keybindings-console">Atalhos para consola</a></li>
+            <li><a href="#keybindings-text-editors">Atalhos de editor de texto (VSCode, can't promise it works on
+                Sublime)</a></li>
+          </ul>
+        </li>
+        <li><a href="#resources">Recursos</a></li>
+      </ol>
+      <button onclick="goToTop()" id="goToTopButton" title="Go to top">
+        <strong>Início </strong><i class="fa-solid fa-arrow-up"></i>
+      </button>
+    </nav>
+    <hr>
+    <section id="glossary">
+      <h3>1. Glossário</h3>
+      <p><strong>GUI - Graphical User Interface</strong></p>
+      <p><strong>CLI - Command Line Interface</strong></p>
+    </section>
+    <hr>
+    <section id="naming-conventions">
+      <h3>2. Convenções de nomes básicas</h3>
+      <p>camelCase - primeiraLetraMinúscula e sempre que muda de palavra usam letra capital para repsentar a mudança de
+        palavra</p>
+      <p>PascalCase - PrimeiraLetraMaiúsculaESempreQueMudaDePalavraUsamLetraMaiúscula</p>
+      <p>snake_case - Palavras_são_separadas_por_underscores</p>
+      <p>kebab-case - palavras-são-separadas-por-hífens</p>
+    </section>
+    <hr>
+    <section id="numeric-systems">
+      <h3>3. Sistemas de numeração</h3>
+      <p>Binário: 0-1</p>
+      <p>0b10111</p><br>
+      <p>Decimal: 0-9</p>
+      <p>23</p><br>
+      <p>Hexadecimal 0-9, A-F
+      <p>0x17</p>
+    </section>
+    <hr>
+    <section id="powers-of-two">
+      <h3>4. Potências de 2</h3>
+      <p>2^n</p>
+      <p>0 1 2 4 8 16 32 64 128 256 512 1024 2048 4096 8192 16384</p>
+    </section>
+    <hr>
+    <section id="logical-operators">
+      <h3>5. Operadores lógicos</h3>
+      <p>&& and</p>
+      <p>|| or</p>
+      <p>! not</p>
+    </section>
+    <hr>
+    <section id="console">
+      <h3>6. Consola</h3>
+      <p>Linha de comandos, CLI, Terminal, Consola, aquela janela preta com letras brancas pequeninas. Tudo nomes para a
+        mesma coisa.</p>
+      <br>
+      <p>Têm vídeos sobre isto no curso do Andrei. Secção 14.</p>
+      <br>
+      <p>cd %d - iniciais de change directory. Muda de diretoria de acordo com o argumento (%d) passado</p>
+      cd ../ - Salta uma pasta para fora</p>
+      cd ./ - Fica na mesma pasta (não faz nada)</p>
+      cd ./Test - Entra para a pasta Test, dentro da pasta atual, se existir</p>
+      cd ./.. - Salta uma pasta para fora</p>
+      cd Test - Entra para a pasta Text, dentro da pasta atual, se existir</p>
+      cd ../Test - Da esquerda para a direita: Salta uma pasta para fora e DEPOIS entra na pasta Test. É como se
+      executássemos os dois comandos abaixo seguidos:</p>
+      cd ../</p>
+      cd Test</p>
+      cd C:\Users\User\Desktop - Independentemente de onde estamos no sistema de ficheiros, salta para a pasta Desktop.
+      Foi utilizado um path absoluto. Começa por C://. Um path absoluto pode ser identificado regra geral por começar
+      por
+      C:// ou file:// ou https://, etc.</p>
+      <section id="console-more-commands">
+        <h4>Mais comandos que pessoalmente acho úteis para Windows</h4>
+        <p>cls - limpa a consola</p>
+        <p>exit - fecha a consola</p>
+        <p>dir - Mostra o conteúdo da diretoria atual</p>
+      </section>
+    </section>
+    <hr>
+    <section id="keybindings">
+      <h3>7. Atalhos</h3>
+      <p>Para atalhos combinados (várias teclas) as teclas pressionam-se pela ordem que se lêem e deixam-se premidas
+        até
+        premir todas.</p>
+      <p>Por exemplo: ctrl+shift+t. Premir o ctrl sem largar. Premir o shift sem largar. Premir o t. Largar todas.</p>
+      <br>
+      <p><em>Eu mudei os atalhos do VSCode</em> para serem iguais aos do Webstorm. Instalei esta extensão abaixo.</p>
+      <p><a href="https://marketplace.visualstudio.com/items?itemName=k--kato.intellij-idea-keybindings">Intellij IDEA
+          Keybindings for VSCode</a></p>
+
+      <section id="keybindings-console">
+        <h4>Atalhos para consola</h4>
+        <p>setinha para cima - pressionar para percorrer os últimos comandos utilizados</p>
+        <p>setinha para baixo - pressionar para percorrer os últimos comandos utilizados</p>
+        <p>TAB - autocomplete/percorre os vários comandos que podem ser inseridos a partir do que já foi inserido pelo
+          utilizador</p>
+        <p>ctrl+c - Quando o FOCUS está no teclado, isto é, não selecionaram texto com o rato, interrompe processo ou
+          comando
+          atual.</p>
+        <br>
+        <p>windows - Abre o "search" do windows. Uso para abrir programas rápido. Por exemplo: Carrego Windows, escrevo
+          o
+          início
+          de notepad até aparecer a aplicação, carrego Enter e baam está aberto o notepad. O mesmo se aplica a sublime,
+          chrome,
+          vscode, etc.
+        </p>
+        <br>
+        <p>ctrl+w - fecha a tab (funciona nos editores de texto também). Eu uso o ctrl+w para fazer "Expand selection"
+          (ver
+          em
+          baixo) nos editores de texto ao invés de fechar tabs.</p>
+        <p>ctrl+tab - muda de tab (funciona nos editores de texto também)</p>
+        <p>ctrl+shift+tab - abre a última tab fechada. Pode repetir-se ad infinitium. (funciona nos editores de texto
+          também)
+        </p>
+        <p>alt+tab - mudar entre janelas. podem usar as setinhas para navegar entre as janelas ou manter o alt premido e
+          carregar</p>
+        <p>repetidamente no tab. Quando largam o alt ele abre a janela focada.</p>
+        <br>
+        <p>alt+f4 - fecha aplicação</p>
+      </section>
+      <section id="keybindings-text-editors">
+        <h4>Atalhos de editor de texto (VSCode, can't promise it works on Sublime)</h4>
+
+        <p>ctrl+d - copia linha ou texto focado e depois cola</p>
+        <p>ctrl+x - copia linha ou texto focado e depois apaga</p>
+        <p>ctrl+c - copia linha ou texto focado</p>
+        <p>ctrl+v - cola elementos do clipboard</p>
+        <p>windows+v - abre clipboard</p>
+        <br>
+        <p>left, right, up, down refere-se às setinhas do teclado</p>
+        <p>shift+alt+left e shift+alt+right - Expand selection. Eu configurei o ctrl+w para fazer isto porque estou
+          habituado
+          no WebStorm.</p>
+        <p>shift+alt+up e shift+alt+down - Mexe a linha focada para cima ou para baixo.</p>
+        <br>
+        <p>ctrl+s - guarda ficheiro(s)</p>
+        <br>
+        <p>ctrl+z - undo</p>
+        <p>ctrl+shift+z - redo (às vezes é o ctrl+y ao invés)</p>
+      </section>
+    </section>
+    <hr>
+    <section id="resources">
+      <h3>Recursos</h3>
+      <h4>Cursos fixes</h4>
+      <p><a href="https://www.udemy.com/course/the-complete-web-developer-zero-to-mastery">The Complete Web Developer in
+          2022: Zero to Mastery</a> - Curso muito completo de Web Development. Bom professor, bons conteúdos e
+        entertaining.</p>
+      <h4>Website otimization and mobile responsiveness</h4>
+      <p><a href="https://web.dev">web.dev</a></p>
+      <p><a href="https://search.google.com/test/mobile-friendly">Google's mobile friendly test</a></p>
+      <p><a href="https://chrome.google.com/webstore/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk">Lighthouse -
+          Chrome Extension</a></p>
+      <h4>
+        HTML/CSS
+      </h4>
+      <p><a href="https://cssbattle.dev/">CSS Battles</a> - "Jogo" engraçado para pôr em prática as skills HTML/CSS. Há
+        muitos vídeos no youtube de malta a "jogar" isto. Very entertaining. Tanto os vídeos como "jogar". E educativo!
+      </p>
+      <p><a href="https://material.io/design">Material Design</a> - Conjunto de guidelines de Design que podem seguir. É
+        apenas um look de muitos. É
+        da Google</p>
+      <p><a href="https://css-tricks.com/">CSS Tricks</a> - Recurso muito bom de CSS.</p>
+      <p><a href="https://paletton.com/">Paletton</a> - Recurso para escolher cores que encaixam bem umas com as outras.
+      </p>
+    </section>
+    <footer>
+      <p>&copy; 2022 Vacalexis</p>
+    </footer>
+  </div>
+</body>
+
+<!-- Go to top button as seen in from https://www.w3schools.com/howto/howto_js_scroll_to_top.asp -->
+<!-- Modified style to have an icon and label as seen in https://www.w3schools.com/howto/howto_css_icon_buttons.asp -->
+<link rel="stylesheet" type="text/css" href="go-to-top-button/go-to-top-button.css">
+<script src="go-to-top-button/go-to-top-button.js"></script>
+
+</html>
